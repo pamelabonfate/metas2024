@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
 body{
-    background-image: -o-linear-gradient();
+    background: linear-gradient(pink,black,white);
+    font-family:Oswald;
 }
