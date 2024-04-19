@@ -28,5 +28,18 @@ let dias = Math.floor(horas/24);
 segundos %=60;
 minutos%=60;
 horas%=24;
- return dias + "dias" + horas+ "horas" + minutos + "minutos" + segundos + "segundos";
+
+if(tempoFinal>0){ 
+    return dias + "dias" + horas+ "horas" + minutos + "minutos" + segundos + "segundos";
+}else{
+    return "prazo encerrado";
+}
+
+}
+
+function atualizaCronometro(){
+    //laço de reetição para interagir com todos os objetivos
+    for (let i =0;1 <contadores.length; i++){
+        contadores[i].textContent=calculaTempo(tempos[i]);//
+    }
 }
