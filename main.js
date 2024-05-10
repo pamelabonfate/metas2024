@@ -40,6 +40,12 @@ if(tempoFinal>0){
 function atualizaCronometro(){
     //laço de reetição para interagir com todos os objetivos
     for (let i =0;1 <contadores.length; i++){
-        contadores[i].textContent=calculaTempo(tempos[i]);//
+        contadores[i].textContent=calculaTempo(tempos[i]);
     }
 }
+function comecacronometro(){
+     atualizaCronometro(); X/chamada da função criada anteriormente dentro desta função 
+     setInterval (atualizaCronometro, 1000); //função que faz a contagem do tempo a cada seg. 
+}
+     comecaCronometro(); //chamada da função que inicia o cronômetro
+     
