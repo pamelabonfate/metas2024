@@ -16,14 +16,16 @@ for (let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2025-10-05T00:00:00");
-contadores[0].textContent = calculaTempo(TempoObjetivo1);
+const tempoObjetivo2 = new Date("2024-11-05T00:00:00");
+const tempoObjetivo3 = new Date("2025-02-05T00:00:00");
+const tempoObjetivo4 = new Date("2024-12-05T00:00:00");
 
 function calculaTempo(tempoObjetivo){
 let tempoAtual = new Date();
 let tempoFinal = tempoObjetivo - tempoAtual;
 let segundos = Math.floor(tempoFinal/1000);
 let minutos = Math.floor(segundos/60);
-let horas = Math.floor(minutos/60);
+let horas = Math.floor(minutos/60); //função que faz a contagem do tempo a cada seg. rivadas comecaCronometro(); //chamada da função que inicia o cronômetro/60);
 let dias = Math.floor(horas/24);
 segundos %=60;
 minutos%=60;
@@ -44,8 +46,7 @@ function atualizaCronometro(){
     }
 }
 function comecacronometro(){
-     atualizaCronometro(); X/chamada da função criada anteriormente dentro desta função 
+     atualizaCronometro(); //chamada da função criada anteriormente dentro desta função 
      setInterval (atualizaCronometro, 1000); //função que faz a contagem do tempo a cada seg. 
 }
      comecaCronometro(); //chamada da função que inicia o cronômetro
-     
